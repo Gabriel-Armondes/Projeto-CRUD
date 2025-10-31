@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestão de Beneficiários</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestão de Beneficiários - ODS 2</h1>
+        <form id="form">
+            <input type="hidden" id="id">
+            <label>Nome:</label>
+            <input type="text" id="nome" required>
+            <label>CPF:</label>
+            <input type="text" id="cpf" required>
+            <label>Endereço:</label>
+            <input type="text" id="endereco" required>
+            <button type="submit">Salvar</button>
+        </form>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Endereço</th>
+                    <th>Ações</th>
+                </tr>
+            </thead>
+            <tbody id="lista"></tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
