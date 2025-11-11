@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ODS 2: Fome Zero</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div id="app">
+    <header>
+      <h1>ODS 2: Fome Zero</h1>
+      <p>Gestão de Doações – MySQL Workbench 8.0 CE</p>
+    </header>
+
+    <main>
+      <!-- HOME -->
+      <section id="home" class="screen active">
+        <div class="card">
+          <h2>Bem-vindo!</h2>
+          <p>Registre doações em tempo real.</p>
+          <button onclick="show('cadastro')" class="btn-primary">Nova Doação</button>
+          <button onclick="show('lista')" class="btn-secondary">Ver Doações</button>
+        </div>
+      </section>
+
+      <!-- CADASTRO -->
+      <section id="cadastro" class="screen">
+        <div class="card">
+          <button onclick="show('home')" class="back">← Voltar</button>
+          <h2>Nova Doação</h2>
+          <form id="form">
+            <input type="text" id="descricao" placeholder="Alimento" required>
+            <input type="number" id="quantidade" placeholder="Quantidade" min="1" required>
+            <select id="unidade" required>
+              <option value="">Unidade</option>
+              <option value="kg">kg</option>
+              <option value="un">unidades</option>
+              <option value="L">litros</option>
+            </select>
+            <input type="text" id="cep" placeholder="CEP" maxlength="9" required>
+            <label class="checkbox">
+              <input type="checkbox" id="retirada" checked> Disponível para retirada
+            </label>
+            <button type="submit">Salvar</button>
+          </form>
+          <p id="msg"></p>
+        </div>
+      </section>
+
+      <!-- CONFIRMAÇÃO -->
+      <section id="confirmacao" class="screen">
+        <div class="card success">
+          <h2>Salvo!</h2>
+          <p>Doação registrada no MySQL.</p>
+          <button onclick="show('lista')" class="btn-primary">Ver Lista</button>
+        </div>
+      </section>
+
+      <!-- LISTA -->
+      <section id="lista" class="screen">
+        <div class="card">
+          <button onclick="show('home')" class="back">← Início</button>
+          <h2>Doações</h2>
+          <button onclick="show('cadastro')" class="btn-primary">+ Nova</button>
+          <table id="tabela">
+            <thead>
+              <tr>
+                <th>Alimento</th>
+                <th>Qtd</th>
+                <th>CEP</th>
+                <th>Retirada</th>
+                <th>Ações</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+          <p id="empty">Nenhuma doação.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 – Projeto Final | HTML + CSS + JS + Node.js + MySQL</p>
+    </footer>
+  </div>
+
+  <script src="/js/app.js"></script>
+</body>
+</html>
