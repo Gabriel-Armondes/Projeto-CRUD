@@ -13,9 +13,11 @@
 
 ## Como Rodar
 1. Dê 2 cliques em `iniciar.bat`
-2. Acesse: http://localhost:3000
+2. Ou digite .\node-portable\node.exe server\index.js
+3. Acesse: http://localhost:3000
 
 ## Tecnologias
 - HTML, CSS, JavaScript
 - Node.js, Express
 - MySQL Workbench 8.0 CE
+
