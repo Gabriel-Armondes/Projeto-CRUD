@@ -1,23 +1,28 @@
-# ODS 2: Fome Zero – Plataforma de Doações
+INSTRUÇÕES PARA RODAR A PLATAFORMA DE DOAÇÕES – FOME ZERO (ODS 2)
+================================================================
 
-**CRUD completo com MySQL Workbench 8.0 CE**  
-**Node.js portátil – sem instalação**  
-**1 clique duplo para rodar**
+Qualquer pessoa com Windows pode rodar em 3 passos (sem instalar nada):
 
-## Funcionalidades
-- Cadastrar doações
-- Listar doações
-- Excluir doações
-- Integração com MySQL
-- Design full-screen, colorido
+Passo 1 – Baixe o projeto completo
+   • Clique no botão verde "Code" → "Download ZIP"
+   • Ou clique aqui: https://github.com/Gabriel-Armondes/Projeto-CRUD/archive/refs/heads/main.zip
+   • Extraia a pasta em qualquer lugar (ex: Área de Trabalho)
 
-## Como Rodar
-1. Dê 2 cliques em `iniciar.bat`
-2. Ou digite .\node-portable\node.exe server\index.js
-3. Acesse: http://localhost:3000
+Passo 2 – Abra a pasta extraída
 
-## Tecnologias
-- HTML, CSS, JavaScript
-- Node.js, Express
-- MySQL Workbench 8.0 CE
+Passo 3 – DÊ 2 CLIQUES no arquivo:  iniciar.bat
+   (ele vai abrir uma janela preta e em 5 segundos aparecerá a mensagem:
+   "Servidor rodando em http://localhost:3000")
 
+Passo 4 – Abra o navegador e digite:
+   http://localhost:3000
+
+Pronto! A plataforma de doações já está funcionando.
+
+Se der erro de porta ocupada:
+   • Feche o navegador e execute novamente o iniciar.bat
+
+Vídeo rápido mostrando o processo (30 segundos):
+https://youtu.be/xxxxxxx (substitua pelo seu vídeo quando gravar)
+
+Dúvidas? Entre em contato: gabriel.armondes@ucb.br
