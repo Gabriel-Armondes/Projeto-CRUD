@@ -22,4 +22,14 @@ Pronto! A plataforma de doações já está funcionando.
 Se der erro de porta ocupada:
    • Feche o navegador e execute novamente o iniciar.bat
 
+### SE O iniciar.bat NÃO FUNCIONAR (alternativa 100% garantida)
+
+1. Abra a pasta do projeto  
+2. Segure **Shift + Botão direito** dentro da pasta → “Abrir janela do PowerShell aqui”  
+   (ou Prompt de Comando / Terminal)
+
+3. Cole e pressione Enter:
+```bash
+./node-portable/node.exe server/index.js
+
 Dúvidas? Entre em contato: gabriel.armondes@ucb.br
