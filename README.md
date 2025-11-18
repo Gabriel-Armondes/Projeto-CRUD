@@ -22,7 +22,4 @@ Pronto! A plataforma de doações já está funcionando.
 Se der erro de porta ocupada:
    • Feche o navegador e execute novamente o iniciar.bat
 
-Vídeo rápido mostrando o processo (30 segundos):
-https://youtu.be/xxxxxxx (substitua pelo seu vídeo quando gravar)
-
 Dúvidas? Entre em contato: gabriel.armondes@ucb.br
